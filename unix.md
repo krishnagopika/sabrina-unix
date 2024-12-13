@@ -131,9 +131,6 @@ sort -M filename
 
 ### Tar Command  
 
-
-### **Training Notes: Mastering the `tar` Command**
-
 #### **Introduction to `tar`**
 - **Purpose**: Short for "tape archive," `tar` is used for archiving multiple files/directories into a single file, often for backups or transfers.
 - **Key Features**:  
@@ -551,8 +548,6 @@ $      Matches characters at the end of a line
   `:bn` (next buffer), `:bp` (previous buffer).  
 
 
-### **Demo File Content**
-
 ### **Example Use Cases**
 
 1. **Search for all errors in the log file**:
@@ -572,10 +567,3 @@ $      Matches characters at the end of a line
    - Command: `:set number`
 
 ---
-
-
-
-
-
-
-
