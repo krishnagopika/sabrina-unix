@@ -267,6 +267,10 @@ tar [OPTIONS] [ARCHIVE_NAME] [FILES/DIRECTORIES]
 #### `nohup`  
 - Runs a command immune to hangups (terminal closure). Example: `nohup command &`.  
 
+### `ps aux | grep process`
+
+- A command to search the process by its name.
+
 #### `kill`  
 - Sends a signal to terminate a process by PID. Example: `kill 1234`.  
 
@@ -277,7 +281,7 @@ tar [OPTIONS] [ARCHIVE_NAME] [FILES/DIRECTORIES]
 - Kills processes matching a regex pattern. Example: `pkill -9 sshd`.  
 
 #### Signals:  
-- `kill -15`: Graceful stop (default).  
+- `kill -15`: Graceful stop (default).  SIGTERM 
 - `kill -9`: Forceful stop.  
 - `kill -1`: Reloads process configuration.  
 
