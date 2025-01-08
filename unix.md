@@ -258,11 +258,24 @@ tar [OPTIONS] [ARCHIVE_NAME] [FILES/DIRECTORIES]
 #### `fg`  
 - Brings a background job to the foreground.  
 
+```bash
+fg %1
+```
+
 #### `bg`  
-- Resumes a suspended job in the background.  
+- Resumes a suspended job in the background. 
+
+```bash
+bg %1
+``` 
 
 #### `&`  
-- Appends to run a command in the background. Example: `command &`.  
+- Appends to run a command in the background. Example: `command &`. 
+
+
+```bash
+ping google.com &
+```
 
 #### `nohup`  
 - Runs a command immune to hangups (terminal closure). Example: `nohup command &`.  
@@ -275,7 +288,7 @@ tar [OPTIONS] [ARCHIVE_NAME] [FILES/DIRECTORIES]
 - Sends a signal to terminate a process by PID. Example: `kill 1234`.  
 
 #### `killall`  
-- Terminates all processes matching a name. Example: `killall firefox`.  
+- Terminates all processes matching a name. Example: `killall ping`.  
 
 #### `pkill`  
 - Kills processes matching a regex pattern. Example: `pkill -9 sshd`.  
@@ -571,3 +584,19 @@ $      Matches characters at the end of a line
    - Command: `:set number`
 
 ---
+
+
+[wsl installation](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+
+```bash
+sudo apt-get update -y
+
+# update all packages to latest version
+
+sudo apt-get install unzip -y
+```
+
+
+tar : compress the wntire archive
+zip: compresses individual files
