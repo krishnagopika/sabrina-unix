@@ -31,7 +31,7 @@ Redirecting output:
 ls > output.txt  # Redirect stdout to file
 ls 2> error.txt  # Redirect stderr to file
 ls &> all_output.txt  # Redirect both stdout and stderr to file
-cat < file.txt  # Read from a file and display
+cat file.txt  # Read from a file and display
 ```
 
 ## Variables
@@ -72,7 +72,11 @@ echo "Logging in as $USERNAME..."
 
 ```sh
 CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
-echo "Current timestamp: $CURRENT_DATE"
+# $() is similar to ``
+CURRENT_DATE=`date +"%Y-%m-%d %H:%M:%S"`
+
+CURRENT_TIME=`date +"%H:%M:%S"`
+echo "Current timestamp: $CURRENT_DATE current time: $CURRENT_TIME"
 ```
 
 ## Conditionals and Operators
@@ -223,3 +227,7 @@ backup_logs() {
 
 backup_logs
 ```
+
+
+### environmental variables
+
